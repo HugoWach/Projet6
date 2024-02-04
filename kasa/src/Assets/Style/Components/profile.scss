@@ -5,5 +5,14 @@
     & span {
         display: flex;
         flex-direction: column;
+        color: #FF6060;
+        justify-content: center;
+        font-size: larger;
+        margin-right: 1%;
+    }
+
+    & img {
+        width: 100px;
+        border-radius: 100px;
     }
 }

@@ -1,0 +1,16 @@
+ul{
+    display: flex;
+
+    & li {
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    margin-right: 2%;
+    padding: 5px;
+    background-color: #FF6060;
+    color: white;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    }
+}

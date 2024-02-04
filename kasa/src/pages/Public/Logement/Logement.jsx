@@ -6,6 +6,8 @@ import Tag from '@/components/Tag/tag';
 import Profile from '@/components/Profile/profile';
 import Slider from '@/components/Slider/slider';
 import Title from '@/components/Title/title';
+import Dropdown from '@/components/Dropdown/dropdown';
+
 
 
 
@@ -53,6 +55,10 @@ const Logement = ({ image, title }) => {
             <div className='tagStar'>
                 <Tag tags={logement.tags} />
                 <Star rating={logement.rating} />
+            </div>
+            <div className='doubleDropdown'>
+                <Dropdown title={logement.Title} content={logement.Content} pages="true" />
+                <Dropdown title={logement.Title} content={logement.Content} pages="true" />
             </div>
 
         </section>

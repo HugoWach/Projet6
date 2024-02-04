@@ -1,0 +1,23 @@
+.Logement {
+
+    display: flex;
+    flex-direction: column;
+
+    & .titleProfile{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    & .doubleDropdown{
+        display: flex;
+        justify-content: space-between;
+        margin: 3%;
+    }
+
+    & .tagStar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 2%;
+    }
+}
