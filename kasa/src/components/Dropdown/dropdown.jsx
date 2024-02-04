@@ -28,7 +28,7 @@ const Dropdown = ({ title, content, pages }) => {
                                 <p>{content}</p>
                             ) : (
                                 <ul>
-                                    <li>hello</li>
+                                    <li></li>
                                 </ul>
                             )
                         }

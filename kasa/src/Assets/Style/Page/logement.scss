@@ -10,8 +10,12 @@
     
     & .doubleDropdown{
         display: flex;
-        justify-content: space-between;
-        margin: 3%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+
+        & .Dropdown {
+            width: 50%;
+        }
     }
 
     & .tagStar {
@@ -19,5 +23,24 @@
         flex-direction: row;
         justify-content: space-between;
         margin-top: 2%;
-    }
+
+        & ul{
+            display: flex;
+
+        }
+        
+        & li {
+            display: flex;
+            flex-direction: row;
+            border-radius: 5px;
+            margin-right: 2%;
+            padding: 5px;
+            background-color: #FF6060;
+            color: white;
+            width: 200px;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            }
+        }
 }
