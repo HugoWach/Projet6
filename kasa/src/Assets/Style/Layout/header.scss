@@ -1,0 +1,38 @@
+header {
+    @extend %displaycenterflex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    @media screen and (max-width: $mobile) {
+        flex-direction: column;
+        margin-top: 30px;
+        justify-content: space-around;
+        height: 9em;
+    }
+
+    & img {
+        @media screen and (max-width: $mobile) {
+            height: 4em;
+        }
+    }
+
+    & nav {
+        @media screen and (max-width: $mobile) {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        & .navlink {
+            color: $color-primary;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        & .navlink:hover {
+            color: $color-black
+        }
+    }
+}

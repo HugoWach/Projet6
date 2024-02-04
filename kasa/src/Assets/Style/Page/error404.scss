@@ -1,0 +1,17 @@
+.Error404 {
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: red;
+
+    & div {
+        margin: 10%;
+        font-size: 35px;
+    }
+
+    & .navlink {
+        color: red;
+    }
+
+}

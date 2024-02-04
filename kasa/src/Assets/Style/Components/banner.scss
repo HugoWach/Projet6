@@ -1,0 +1,53 @@
+.Banner {
+    position: relative;
+    height: 180px;
+    border-radius: 25px;
+    margin-top: 4%;
+
+    & img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+
+    & .Banner-sombre {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $color-black;
+        opacity: 0.3;
+        height: 100%;
+        width: 100%;
+        border-radius: 25px;
+
+
+    }
+
+    & h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        width: 100%;
+        color: $color-white;
+        font-weight: 300;
+        transform: translate(-50%, -50%);
+
+        @media screen and (max-width: $tablette) {
+            font-size: 32px;
+            left: 15px;
+            text-align: start;
+            transform: translateY(-50%);
+            width: auto;
+        }
+
+        @media screen and (max-width: $mobile) {
+            font-size: 24px;
+            left: 15px;
+            text-align: start;
+            transform: translateY(-50%);
+            width: auto;
+        }
+    }
+}

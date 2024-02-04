@@ -1,0 +1,16 @@
+footer {
+    @extend %displaycenterflex;
+    background-color: $color-black;
+    color: $color-white;
+    flex-direction: column;
+    max-width: none;
+
+    & img {
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    & .textFooter {
+        margin-bottom: 2%;
+    }
+}

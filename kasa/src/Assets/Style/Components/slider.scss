@@ -1,0 +1,56 @@
+.sliderContainer {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    margin-top: 3%;
+
+    & .containerimage {
+        white-space: nowrap;
+        transition: ease 1000ms;
+
+        & .imageslider {
+            display: inline-block;
+            //background-size: cover;
+            height: 400px;
+            width: 100%;
+            border-radius: 40px;
+
+            @media screen and (max-width: $tablette) {
+                height: 300px;
+            }
+        }
+    }
+
+    & p {
+
+        display: flex;
+        justify-content: center;
+    }
+
+    & .previousarrow {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 99;
+
+        @media screen and (max-width: $tablette) {
+            width: 15px;
+            top: 47%;
+        }
+    }
+
+    & .nextarrow {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 99;
+
+        @media screen and (max-width: $tablette) {
+            width: 15px;
+            top: 47%;
+        }
+    }
+}

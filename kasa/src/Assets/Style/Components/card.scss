@@ -1,0 +1,39 @@
+.Card {
+    position: relative;
+    height: 100%;
+    min-height: 340px;
+    border-radius: 10px;
+
+    & img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    & .Card-sombre {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $color-black;
+        background: $degraderHome;
+        border-radius: 10px;
+    }
+
+    & h2 {
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        color: $color-white;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+}
+
+.Card:hover {
+    background: $degraderHome;
+    cursor: pointer;
+}

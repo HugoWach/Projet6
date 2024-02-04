@@ -1,0 +1,22 @@
+.Accueil {
+    margin-bottom: 4%;
+
+    & .ListeLogements {
+        background-color: $color-backgroundHome;
+        display: grid;
+        @include grid-template-colomns(3);
+        gap: 30px 30px;
+        padding: 40px 40px;
+        margin-top: 40px;
+        height: 100%;
+        border-radius: 25px;
+
+        @media only screen and (max-width : $tablette) {
+            @include grid-template-colomns(2);
+        }
+
+        @media only screen and (max-width : $mobile) {
+            @include grid-template-colomns(1);
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.profile {
+    display: flex;
+    justify-content: right;
+
+    & span {
+        display: flex;
+        flex-direction: column;
+    }
+}

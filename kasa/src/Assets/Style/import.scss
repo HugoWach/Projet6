@@ -1,0 +1,24 @@
+// Template Base
+@import "@/Assets/Style/Template/template.scss";
+
+// Layouts
+@import "@/Assets/Style/Layout/main.scss";
+@import "@/Assets/Style/Layout/header.scss";
+@import "@/Assets/Style/Layout/footer.scss";
+
+// Components
+@import "@/Assets/Style/Components/card.scss";
+@import "@/Assets/Style/Components/banner.scss";
+@import "@/Assets/Style/Components/dropdown.scss";
+@import "@/Assets/Style/Components/slider.scss";
+@import "@/Assets/Style/Components/profile.scss";
+@import "@/Assets/Style/Components/star.scss";
+
+
+
+
+// Pages
+@import "@/Assets/Style/Page/about.scss";
+@import "@/Assets/Style/Page/accueil.scss";
+@import "@/Assets/Style/Page/logement.scss";
+@import "@/Assets/Style/Page/error404.scss";
