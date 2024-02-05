@@ -57,8 +57,8 @@ const Logement = ({ image, title }) => {
                 <Star rating={logement.rating} />
             </div>
             <div className='doubleDropdown'>
-                <Dropdown title={logement.Title} content={logement.Content} pages="true" />
-                <Dropdown title={logement.Title} content={logement.Content} pages="true" />
+                <Dropdown title="Description" content={logement.description} pages="true" />
+                <Dropdown title="Equipements" content={logement.equipments} pages="true" />
             </div>
 
         </section>
