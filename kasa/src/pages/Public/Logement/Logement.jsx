@@ -49,7 +49,7 @@ const Logement = ({ image, title }) => {
         <section className="Logement">
             <Slider pictures={logement.pictures} />
             <div className='titleProfile'>
-                <Title title={logement.title} />
+                <Title title={logement.title} location={logement.location} />
                 <Profile host={logement.host} />
             </div>
             <div className='tagStar'>
@@ -57,8 +57,10 @@ const Logement = ({ image, title }) => {
                 <Star rating={logement.rating} />
             </div>
             <div className='doubleDropdown'>
-                <Dropdown title="Description" content={logement.description} pages="true" />
-                <Dropdown title="Equipements" content={logement.equipments} pages="true" />
+                <span className="Description">
+                    <Dropdown title="Description" content={logement.description} pages={true} />
+                </span>
+                <Dropdown className="Equipements" title="Equipements" content={logement.equipments} pages={false} />
             </div>
 
         </section>

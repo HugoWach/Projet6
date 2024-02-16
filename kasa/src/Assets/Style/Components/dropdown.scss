@@ -1,6 +1,6 @@
 .Dropdown {
 
-    list-style-type: none ;
+    list-style-type: none;
 
     & .dropdown-header {
         background-color: #FF6060;
@@ -32,10 +32,39 @@
         margin-right: 8%;
         display: flex;
 
+
         & p {
-            margin: 1%;
+            margin: 2%;
+            line-height: 125%;
+        }
+
+        & ul {
+            margin: 2%;
+
+            & li {
+                margin: 2%;
+            }
         }
 
 
+    }
+
+    & .Description {
+        margin-right: 0%;
+    }
+
+    & .dropdown-header span img {
+        transition: transform 0.5s ease;
+        /* Transition de 0.5 seconde */
+    }
+
+    & .upArrow {
+        transform: rotate(-180deg);
+        /* Rotation de 180 degrés pour pointer vers le bas */
+    }
+
+    & .downArrow {
+        transform: rotate(0deg);
+        /* Pas de rotation pour pointer vers le haut */
     }
 }

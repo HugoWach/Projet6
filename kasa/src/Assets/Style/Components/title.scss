@@ -1,4 +1,10 @@
-.title{
+.title {
     color: #FF6060;
     font-size: xx-large;
+    margin-top: 2%;
+
+    & .location {
+        color: black;
+        font-size: medium;
+    }
 }

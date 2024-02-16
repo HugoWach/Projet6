@@ -8,13 +8,29 @@
         justify-content: space-between;
     }
 
+    & .Description {
+        display: flex;
+        width: 100%;
+        padding-right: 2%;
+    }
+
     & .doubleDropdown {
         display: flex;
         margin-top: 3%;
         margin-bottom: 3%;
 
         & .Dropdown {
-            width: 50%;
+            width: 100%;
+
+            & .dropdown-header {
+                margin-left: 0%;
+                margin-right: 0%;
+            }
+
+            & .dropdown-description {
+                margin-left: 0%;
+                margin-right: 0%;
+            }
         }
     }
 
